@@ -1,0 +1,118 @@
+/* Edit Page Styling */
+body {
+    background-image: url("../images/annie-spratt-xTaOPMa6wAE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:var(--color-text);
+    margin: 0;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-width: 500px;
+}
+
+.wrapper h1 {
+    padding: 10px;
+    color: var(--color-primary);
+    border-bottom: solid var(--color-primary) 3px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    border: solid var(--color-primary) 2px;
+    padding: 10%;
+    background: transparent;
+    background-color: rgba(0,0,0, .1);
+    min-width: 400px;
+    min-height: 400px;
+    margin-bottom: 5em;
+}
+
+form label {
+    color: var(--color-primary);
+    font-size: 1.5em;
+    margin-right: 18px;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+#task_name {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    outline-style: none;
+    border: none;
+    padding: 5px;
+}
+
+#status {
+    font-weight: bold;
+    background: transparent;
+    color: var(--color-primary);
+    padding: 5px;
+    appearance: none;
+    outline: none;
+}
+
+#status:hover {
+    background: var(--color-primary);
+    color: var(--color-text);
+}
+
+form input, textarea, select, option {
+    letter-spacing: 1px;
+    font-size: medium;
+}
+
+#description {
+    outline: none;
+    height: 7em;
+    min-height: 50px;
+    min-width: 20em;
+    align-self: center;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    resize: none;
+}
+
+#update-btn {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 2em;
+    align-self: center;
+    max-width: max-content;
+    padding: 10px;
+    border: 2px solid var(--color-primary);
+    border-radius: 25px;
+    color: var(--color-primary);
+}
+
+#update-btn:hover {
+    transition: 300ms;
+    color: var(--color-text);
+    border-color: var(--color-text);
+    background-color: var(--color-primary);
+}
+/* End of Edit Page styling */

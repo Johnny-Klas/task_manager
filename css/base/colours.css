@@ -1,0 +1,19 @@
+/* Alternative colours */
+
+/* :root {
+    --color-primary: #007bb5;
+    --color-secondary: #45a049;
+    --color-accent: lightblue;
+    --color-accent2: #4CAF50;
+    --color-text: #FFFFFF;
+    --color-backgroundOverlay: rgba(0, 0, 0, 0.7);
+  } */
+
+:root {
+  --color-primary: #607581;
+  --color-secondary: #7A8580;
+  --color-accent: #C2D3CC;
+  --color-accent2: #B8B8A6;
+  --color-text: #FFFFFF;
+  --color-backgroundOverlay: rgba(0, 0, 0, 0.7);
+} 

@@ -1,0 +1,46 @@
+                /* Header Styles*/
+@import '../base/colours.css';
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo img{
+    height: 70px;
+}
+
+.header-container {
+    background-color: var(--color-primary);
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 3px solid var(--color-accent);
+}
+
+.nav-menu {
+    list-style-type: none;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-menu li a {
+    color: var(--color-text);
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+    color: var(--color-accent);
+}
+
+                /* END OF HEADER STYLES */

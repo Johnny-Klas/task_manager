@@ -1,0 +1,253 @@
+/* Main Page Styling */
+
+* {
+    scroll-behavior: smooth;
+}
+
+.task-body {
+    background-image: url("../images/annie-spratt-xTaOPMa6wAE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:var(--color-text);
+    margin: 0;
+}
+
+.wrapper {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.task-body h1 {
+    margin-top: auto;
+    z-index: 2;
+    padding: 10px;
+    color: var(--color-primary);
+    border-bottom: solid var(--color-primary) 3px;
+}
+
+.task-body h2 {
+    z-index: 2;
+}
+
+div .success {
+    z-index: 2;
+}
+
+table {
+    border-radius: 5px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px 10px;
+}
+
+th {
+    border-radius: 5px;
+    padding: 10px;
+    border:solid var(--color-accent) 2px;
+    background-color: var(--color-secondary);
+}
+
+td {
+    background-color: var(--color-primary);
+    padding: 10px;
+    border: 1px solid var(--color-accent);
+    border-radius: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    letter-spacing: 1px;
+    max-width: 300px;
+    vertical-align: top;
+}
+
+#buttons {
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    gap: 15px;
+    width: inherit;
+    height: auto;
+}
+
+#edit,
+#delete {
+    position: relative;
+    background: var(--color-accent);
+    padding: 30px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#edit::before,
+#delete::before {
+    content: attr(data-icon);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary);
+}
+
+#edit:hover::before,
+#delete:hover::before {
+    transition: 100ms;
+    content: attr(data-text);
+    font-size: .5em;
+}
+
+.add-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    z-index: 2;
+    margin-bottom: 50px;
+    min-width: 35em;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, .1);
+}
+
+#showFormButton {
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    max-width: 30%;
+    border: solid var(--color-primary) 2px;
+    border-radius: 25px;
+    text-decoration: underline;
+    color: var(--color-primary);
+    background-color: var(--color-text);
+    padding: 10px;
+}
+
+#showFormButton:hover {
+    transition: 300ms;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+}
+
+.task-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    border: solid transparent 2px;
+    padding: 10px;
+    background: transparent;
+    display: none;
+}
+
+.add-task div {
+    margin: 10px 10px;
+    display:  flex;
+    flex-direction: column;
+}
+
+.task-name input {
+    outline: none;
+    width: 50%;
+    align-self: center;
+    min-height: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.task-desc textarea{
+    outline: none;
+    height: 7em;
+    min-height: 50px;
+    width: 50%;
+    align-self: center;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    resize: none;
+}
+
+.task-status select::-ms-expand {
+    display: none;
+}
+
+.task-status select::-webkit-select-arrow {
+    display: none;
+}
+
+.task-status select {
+    text-align: center;
+    width: 25%;
+    align-self: center;
+    min-height: 25px;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--color-primary);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: large;
+    padding: 10px;
+    border: 2px solid var(--color-primary);
+    appearance: none;
+}
+
+.task-status select:hover {
+    transition: 200ms;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border-color: var(--color-text);
+}
+
+.task-status select:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5%;
+    width: 20%;
+    min-height: 40px;
+    border: solid 3px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+    color: var(--color-primary);
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.button::before {
+    content: attr(data-icon);
+    color: var(--color-primary);
+}
+
+.button:hover::before {
+    content: attr(data-text);
+    line-height: normal;
+    font-size: 17px;
+}
+/* End of Main Page Styling */

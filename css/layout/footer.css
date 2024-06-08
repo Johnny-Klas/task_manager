@@ -1,0 +1,63 @@
+/* Footer Styles */
+@import '../base/colours.css';
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    left: 0;
+    width: 100%;
+    overflow: visible;
+    border-top: 3px solid var(--color-accent);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+
+}
+
+.footer-section h4 {
+    margin-bottom: 5px;
+
+}
+
+.footer-section p {
+    font-size: small;
+}
+
+.footer-section ul {
+    list-style: none;
+    font-size: small;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: var(--color-accent);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #222;
+    font-size: 0.9em;
+}
+                /* END OF FOOTER STYLES */
