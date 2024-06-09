@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!-- Start session to use the Globals passed on / Include the database connection file / Include the header file -->
 <?php
 session_start();
@@ -17,7 +18,6 @@ $tasks = $result->fetch_all(MYSQLI_ASSOC);
 
 ?>
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

@@ -40,12 +40,12 @@ include("../database.php");
 
                 <div class="name-div">
                 <label for="task_name">Task Name:</label><br>
-                <input type="text" id="task_name" name="task_name" value="<?php echo $task['task_name']; ?>"><br>
+                <input type="text" id="task_name" name="task_name" value="<?php echo $task['task_name'];?>" required><br>
                 </div>
 
                 <div class="desc-div">
                 <label for="description">Description:</label><br>
-                <textarea id="description" name="description"><?php echo $task['description']; ?></textarea><br>
+                <textarea id="description" name="description" required><?php echo $task['description']; ?></textarea><br>
                 </div>
 
                 <div class="status-div">
