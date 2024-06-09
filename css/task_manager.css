@@ -140,7 +140,7 @@ td {
 
 .task-form {
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     font-size: large;
@@ -148,7 +148,6 @@ td {
     border: solid transparent 2px;
     padding: 10px;
     background: transparent;
-    display: none;
 }
 
 .add-task div {

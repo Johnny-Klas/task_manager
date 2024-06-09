@@ -104,20 +104,24 @@ $tasks = $result->fetch_all(MYSQLI_ASSOC);
     </main>
     <!-- Created a JS script to dynamically hide or show the add-task form with a press of a button -->
     <script>
-        // Get references to the button and the form
-        const showFormButton = document.getElementById('showFormButton');
-        const taskForm = document.getElementById('task-form');
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get references to the button and the form
+            const showFormButton = document.getElementById('showFormButton');
+            const taskForm = document.querySelector('.task-form');
 
-        // Add event listener to the button
-        showFormButton.addEventListener('click', function() {
-        // Toggle the visibility of the form
-        if (taskForm.style.display === 'none') {
-                taskForm.style.display = 'block';
-        } else {
-                taskForm.style.display = 'none';
-            }
+            // Add event listener to the button
+            showFormButton.addEventListener('click', function() {
+                // Get the computed style of the form
+                const formStyle = window.getComputedStyle(taskForm);
+
+                // Toggle the visibility of the form
+                if (formStyle.display === 'none') {
+                    taskForm.style.display = 'flex';
+                } else {
+                    taskForm.style.display = 'none';
+                }
+            });
         });
-
     </script>
     <!-- Include the footer file -->
     <?php include('../includes/footer.html'); ?>
